@@ -7,7 +7,7 @@ import MovieDetails from './components/MovieDetails';
 import AppNavbar from './components/Navbar';
 import Watchlist from './components/Watchlist'; // Import du composant Watchlist
 
-const API_KEY = '41b947864f10a265f44f000f55902f36'; // Remplace par ta clé API TMDb
+const API_KEY = process.env.REACT_APP_TMDB_API_KEY // Remplace par ta clé API TMDb
 const BASE_URL = 'https://api.themoviedb.org/3';
 const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 
